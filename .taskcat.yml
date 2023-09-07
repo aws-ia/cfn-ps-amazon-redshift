@@ -1,5 +1,5 @@
 project:
-  name: quickstart-amazon-redshift
+  name: cfn-ps-amazon-redshift
   owner: quickstart-eng@amazon.com
   package_lambda: false
   regions:
@@ -24,7 +24,7 @@ tests:
       MasterUsername: dbmaster
       QSS3BucketName: $[taskcat_autobucket]
       QSS3BucketRegion: $[taskcat_current_region]
-      QSS3KeyPrefix: quickstart-amazon-redshift/
+      QSS3KeyPrefix: cfn-ps-amazon-redshift/
       RemoteAccessCIDR: 10.0.0.0/16
       EnableBastion: "false"
       ConcurrencyScaling: "off"
