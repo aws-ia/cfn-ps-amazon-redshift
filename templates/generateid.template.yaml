@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: Lambda  Unique Id generator
+Description: Lambda  Unique Id generator (qs-1ui8pjgan)
 Resources:
   LambdaExecutionRole:
     Type: AWS::IAM::Role
