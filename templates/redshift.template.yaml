@@ -584,6 +584,13 @@ Resources:
             Ref: TagCompliance
   RedshiftCluster:
     Type: AWS::Redshift::Cluster
+    Metadata:
+      cfn-lint:
+        config:
+          ignore_checks:
+            - ERedshiftClusterEncrypted
+          ignore_reasons:
+            - ERedshiftClusterEncrypted: Encrypted is configurable.
     DeletionPolicy: Snapshot
     UpdateReplacePolicy: Snapshot
     Properties:
